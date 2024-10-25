@@ -95,3 +95,9 @@ yolo task=segment mode=predict model=yolov8n-seg.pt source="goose/mov" show=True
 ![p8](https://github.com/user-attachments/assets/f4baf021-d62b-4f43-9f56-c4172651f732)
 
 
+
+https://github.com/user-attachments/assets/01f8961b-7b85-4883-92a6-3605f2ac54d3
+
+
+
+
