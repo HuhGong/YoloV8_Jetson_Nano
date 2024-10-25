@@ -1,110 +1,12 @@
 # YoloV8_Jetson_Nano
 
-
-https://github.com/jetsonmom/yolov8_jetson4GB?tab=readme-ov-file
-
-
-# make env
-
-
-uname -a
-
-
-wget https://github.com/Archiconda/build-tools/releases/download/0.2.3/Archiconda3-0.2.3-Linux-aarch64.sh
-sudo chmod 755 Archiconda3-0.2.3-Linux-aarch64.sh
-
-
- ./Archiconda3-0.2.3-Linux-aarch64.sh 
-
-
- conda env list
-
-
- conda activate base
-
- 
-jetson_release 
-
-
-conda create -n yolo python=3.8 -y
-
-
-conda env list
-
-
-conda activate yolo
-
-
- pip install -U pip wheel gdown
-
-
-gdown https://drive.google.com/uc?id=1hs9HM0XJ2LPFghcn7ZMOs5qu5HexPXwM
-
-
-gdown https://drive.google.com/uc?id=1m0d8ruUY8RvCP9eVjZw4Nc8LAwM8yuGV
-
-
-sudo apt-get install libopenblas-base libopenmpi-dev
-
-
-sudo apt-get install libomp-dev
-
-
-pip install torch-1.11.0a0+gitbc2c6ed-cp38-cp38-linux_aarch64.whl
-
-
-pip install torchvision-0.12.0a0+9b5a3fe-cp38-cp38-linux_aarch64.whl
-
-
-python -c "import torch; print(torch.__version__)"
-
-(yolo) dli@dli:~$ python
-
-
->>> import torch
->>> import torchvision
->>> print(torch.__version__)
->>> print(torchvision.__version__)
->>> print("cuda used", torch.cuda.is_available())
-
-git clone https://github.com/Tory-Hwang/Jetson-Nano2
-
-
-(yolo) dli@dli:~$ cd Jetson-Nano2/
-
-
-(yolo) dli@dli:~/Jetson-Nano2$ cd V8
-
-
-(yolo) dli@dli:~/Jetson-Nano2/V8$ pip install ultralytics
-
-
-(yolo) dli@dli:~/Jetson-Nano2/V8$ pip install -r requirements.txt 
-
-
-(yolo) dli@jdli:~/Jetson-Nano2/V8$ pip install ffmpeg-python
-
-
-(yolo) dli@dli:~/Jetson-Nano2$ sudo apt install tree
-
-
-(yolo) dli@jdli:~/Jetson-Nano2$ tree -L 2
-
-gedit  detectY8.py
-
-# in file "detectY8"
-
-
-# change "brtsp: False"
-
-(yolo) yolo@yolo-desktop:~/Jetson-Nano2/V8$ python detectY8.py
-
-# if error code "import cv2" import cv2
-
-# if error code "no module 'tensorboard'" pip install tensorboard
-
-
-
-
-
-
+i refer: this site https://i7y.org/en/yolov8-on-jetson-nano/
+
+![Screenshot from 2024-10-25 15-43-45](https://github.com/user-attachments/assets/82f004dc-a564-477b-8281-50007781ec33)
+![Screenshot from 2024-10-25 15-50-35](https://github.com/user-attachments/assets/6615dc38-03b3-4ae2-a1ed-b79d591d2a23)
+![Screenshot from 2024-10-25 15-51-02](https://github.com/user-attachments/assets/7869842f-a4bd-4cb6-9bf6-b0a2932c6308)
+![Screenshot from 2024-10-25 15-51-25](https://github.com/user-attachments/assets/7df9893d-2dc1-4052-a8f4-6718b5f7cbdd)
+![Screenshot from 2024-10-25 15-51-53](https://github.com/user-attachments/assets/4d3a630d-a75d-4ca1-a53b-1b7b42525aa0)
+![Screenshot from 2024-10-25 16-02-35](https://github.com/user-attachments/assets/d5aac7ef-0b1c-4414-bc80-1dbe96741bb9)
+![Screenshot from 2024-10-25 16-15-47](https://github.com/user-attachments/assets/347bf4a0-3be5-4ba6-b042-4d3f24ca2e6e)
+![Screenshot from 2024-10-25 16-32-45](https://github.com/user-attachments/assets/f709e814-909f-4ebb-a114-435f129e6283)
