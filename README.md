@@ -1,7 +1,7 @@
 # YoloV8_Jetson_Nano
 
 
-How to use Yolov8 in Jetson nano
+How to use YoloV8 in Jetson nano
 
 
 # i refer this site
