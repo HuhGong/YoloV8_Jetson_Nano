@@ -8,6 +8,9 @@ How to use YoloV8 in Jetson nano
 # https://i7y.org/en/yolov8-on-jetson-nano/
 
 
+
+# open terminal
+
 sudo apt update
 
 
